@@ -1,0 +1,9 @@
+uiTotalPcapEntryCount : 312
+uiTotalTCPPcapEntryCount : 312
+uiTotalUDPPcapEntryCount : 0
+uiTotalOtherPcapEntryCount : 0
+
+uiStorePcapEntryCount : 312
+uiStoreTCPPcapEntryCount : 312
+uiStoreUDPPcapEntryCount : 0
+uiStoreOtherPcapEntryCount : 0

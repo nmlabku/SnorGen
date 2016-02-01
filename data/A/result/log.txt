@@ -1,0 +1,43 @@
+SnorGen
+Made by Sung-Ho Yoon	(sungho_yoon@korea.ac.kr)
+Network Management Lab. Korea Univ.   (nmlab.korea.ac.kr)
+final version. 3.8.0 (2014-12-08)
+
+--Configuration--
+THREAD_COUNT : 4
+PARSER : ON
+DIFF_MIN_SUPP : 2 (1 : min_supp is (file_count-1))
+MIN_CONTENT_LENGTH : 3
+MAX_PKT_COUNT_FORWARD : -1 (-1 : nolimit)
+MAX_PKT_COUNT_BACKWARD : -1 (-1 : nolimit)
+MAX_SEQUENCE_LENGTH : -1 (-1 : nolimit)
+
+--file checking start.--
+#01(84 KB): test01.cap - OK
+#02(28 KB): test02.cap - OK
+#03(8 KB): chunked-01.cap - OK
+
+--before filter--
+312 (TCP: 312, UDP: 0, OTHER: 0)
+--after filter--
+312 (TCP: 312, UDP: 0, OTHER: 0)
+
+#1 file : test01                         - flow : 28   pkt : 209   byte : 74305
+#2 file : test02                         - flow : 6   pkt : 92   byte : 23550
+#3 file : chunked-01                     - flow : 1   pkt : 11   byte : 6704
+--file checking end.--
+Real Time: 0.26s, User Time 0.01s, System Time 0.01s
+
+--rule generating start.--
+total file count : 3
+after load total Sequence : 162
+after parser total cSingleSequenceVector : 376
+after single extraction single content rule : 1872
+after trim single content rule : 47
+after multi extraction multi content rule : 154
+after setLocation multi content rule : 154
+after setHeader multi content rule : 154
+after setCompleteness multi content rule : 154
+--rule generating end.--
+Real Time: 0.95s, User Time 2.27s, System Time 0.02s
+
