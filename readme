@@ -1,7 +1,8 @@
+YHGOO COMMIT & BRANCH TEST
+
 execution command
 ./SnorGen -p /data/2014-automaic_payload_extraction/SnorGen-4.0.0/A
 ./SnorGen -p /data/2014-automaic_payload_extraction/data/A
-
 
 
 수행과정
